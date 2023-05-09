@@ -1,0 +1,24 @@
+<p>template-from01 works!</p>
+<section class="row justify-content-center col-md-6 text-left rounded shadow py-5">
+  <h2>Simple form02</h2>
+  <form #myForm="ngForm" (ngSubmit)="onSubmitTemplateBased(myForm)">
+    <div class="form-group">
+      <label for="FirstName">firstName</label>
+      <input required type="text" class="form-control" id="FirstName" name="FirstName" ngModel
+        placeholder="Enter FirstName">
+    </div>
+    <div class="form-group">
+      <label for="Password">Password</label>
+      <input required type="text" class="form-control" id="Password" name="Password" ngModel
+        placeholder="Enter Password">
+    </div>
+    <div class="form-group">
+      <label for="DateOfBirth">DateOfBirth</label>
+      <input required type="date" class="form-control" id="DateOfBirth" name="DateOfBirth" ngModel
+        placeholder="Enter DateOfBirth">
+    </div>
+    <p> <button type="submit" [disabled]="!myForm.valid" class="btn btn-success py-2">Submit</button>
+    </p>
+  </form>
+</section>
+class="btn btn-success
