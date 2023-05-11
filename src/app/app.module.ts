@@ -21,6 +21,8 @@ import { StructuralDirectiveAssignComponent } from './structural-directive-assig
 import { CommonModule } from '@angular/common';
 import { TemplateFromComponent } from './template-from/template-from.component';
 import { TemplateFrom01Component } from './template-from01/template-from01.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +42,8 @@ import { TemplateFrom01Component } from './template-from01/template-from01.compo
     StructuralDirectiveAssignComponent,
     TemplateFromComponent,
     TemplateFrom01Component,
+    ContactUsComponent,
+    ContactComponent,
 
   ],
   imports: [

@@ -9,7 +9,10 @@ import { NgForm } from '@angular/forms';
 export class TemplateFromComponent implements OnInit {
 
   constructor() { }
-
+  defaultCource ='Angular';
+    courseArr : string [] = [
+      'Angular','HTML', 'JavaScript'
+    ]
   ngOnInit() {
   }
   OnSubmit(form: NgForm) {
@@ -18,5 +21,8 @@ export class TemplateFromComponent implements OnInit {
 
     // api/ saveuserData(user: User); // api endpoint
   }
+  getCourse(value){
+console.log(value.target.value);
 
+  }
 }
