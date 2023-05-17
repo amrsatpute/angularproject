@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
-import { FormsModule } from '@angular/forms';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { Test2Component } from './test2/test2.component';
@@ -18,11 +18,11 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { CustomDirective } from './custom.directive';
 import { StructuralDirectiveAssignComponent } from './structural-directive-assign/structural-directive-assign.component';
-import { CommonModule } from '@angular/common';
 import { TemplateFromComponent } from './template-from/template-from.component';
 import { TemplateFrom01Component } from './template-from01/template-from01.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReactiveFroms1Component } from './reactive-froms1/reactive-froms1.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,13 +44,14 @@ import { ContactComponent } from './contact/contact.component';
     TemplateFrom01Component,
     ContactUsComponent,
     ContactComponent,
-
+    ReactiveFroms1Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonModule,
     FormsModule,
-    CommonModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

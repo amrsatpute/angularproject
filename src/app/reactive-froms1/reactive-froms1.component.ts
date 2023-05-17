@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-reactiveform',
-  templateUrl: './reactiveform.component.html',
-  styleUrls: ['./reactiveform.component.css']
+  selector: 'app-reactive-froms1',
+  templateUrl: './reactive-froms1.component.html',
+  styleUrls: ['./reactive-froms1.component.css']
 })
-export class ReactiveformComponent implements OnInit {
+export class ReactiveFroms1Component implements OnInit {
   genders = [
     { id : '1', value: 'Male'},
     { id: '2', value: 'Female'}
@@ -43,4 +43,14 @@ export class ReactiveformComponent implements OnInit {
   OnAddSkills() {
    (<FormArray>this.myReactiveForm.get('skills')).push(new FormControl('', Validators.required));
   }
+
+// Inside your component class
+OnRemoveSkill() {
+  const skillsFormArray = this.myReactiveForm.get('skills') as FormArray;
+  if (skillsFormArray.length > 0) {
+    skillsFormArray.removeAt(skillsFormArray.length - 1);
+  }
+}
+
+
 }
