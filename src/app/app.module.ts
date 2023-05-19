@@ -23,6 +23,9 @@ import { TemplateFrom01Component } from './template-from01/template-from01.compo
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFroms1Component } from './reactive-froms1/reactive-froms1.component';
+// import { UserFormComponent } from './user-form/user-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,13 +48,16 @@ import { ReactiveFroms1Component } from './reactive-froms1/reactive-froms1.compo
     ContactUsComponent,
     ContactComponent,
     ReactiveFroms1Component,
+    // UserFormComponent,
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
